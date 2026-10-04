@@ -1,0 +1,107 @@
+/* Общий вид страницы */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f0e8;
+    color: #333333;
+    margin: 0;
+    line-height: 1.5;
+}
+
+/* Шапка сайта */
+header {
+    background-color: #45634b;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* Меню на каждой странице */
+nav {
+    background-color: #dce6d9;
+    text-align: center;
+    padding: 12px;
+}
+
+nav a {
+    display: inline-block;
+    color: #263b28;
+    margin: 5px 12px;
+}
+
+a {
+    color: #34583a;
+}
+
+a:hover {
+    color: #995021;
+}
+
+/* Основное содержимое */
+main {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+}
+
+h2, h3 {
+    color: #34583a;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Книги идут друг под другом */
+.book {
+    border: 1px solid #cccccc;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+/* Таблица с ценами */
+.table-box {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #aaaaaa;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #45634b;
+    color: white;
+}
+
+.discount {
+    background-color: #e1f1d9;
+}
+
+.price {
+    color: #904b21;
+    font-weight: bold;
+}
+
+/* Карта и подвал */
+iframe {
+    max-width: 100%;
+    border: 1px solid #cccccc;
+}
+
+footer {
+    background-color: #dce6d9;
+    text-align: center;
+    padding: 15px;
+}
