@@ -3,74 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Цены — Между строк</title>
+    <title>Прайс-лист — Между строк</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>📚 Между строк</h1>
+    <header class="site-header">
+        <a href="index.html"><img src="images/logo.png" alt="Логотип магазина: раскрытая книга" width="64" height="64"></a>
+        <h1>Между строк</h1>
         <p>Книжный магазин</p>
     </header>
-
-    <nav>
+    <nav aria-label="Основное меню">
         <a href="index.html">Главная</a>
         <a href="catalog.html">Каталог</a>
-        <a href="price.html">Цены</a>
+        <a href="price.html" aria-current="page">Прайс-лист</a>
         <a href="about.html">О магазине</a>
         <a href="contacts.html">Контакты</a>
     </nav>
-
     <main>
         <h2>Прайс-лист</h2>
-        <p>Стоимость книг из нашего каталога.</p>
+        <p>Стоимость одного экземпляра каждой книги из каталога.</p>
         <div class="table-box">
             <table>
                 <caption>Цены на книги</caption>
-                <tr>
-                    <th>Название</th>
-                    <th>Автор</th>
-                    <th>Цена</th>
-                </tr>
-                <tr>
-                    <td>Гордость и предубеждение</td>
-                    <td>Джейн Остин</td>
-                    <td class="price">590 руб.</td>
-                </tr>
-                <tr class="discount">
-                    <td>Маленький принц — особая цена</td>
-                    <td>Антуан де Сент-Экзюпери</td>
-                    <td class="price">390 руб.</td>
-                </tr>
-                <tr>
-                    <td>Мастер и Маргарита</td>
-                    <td>Михаил Булгаков</td>
-                    <td class="price">690 руб.</td>
-                </tr>
-                <tr>
-                    <td>Алиса в Стране чудес</td>
-                    <td>Льюис Кэрролл</td>
-                    <td class="price">450 руб.</td>
-                </tr>
-                <tr>
-                    <td>Приключения Шерлока Холмса</td>
-                    <td>Артур Конан Дойл</td>
-                    <td class="price">550 руб.</td>
-                </tr>
-                <tr>
-                    <td>Старик и море</td>
-                    <td>Эрнест Хемингуэй</td>
-                    <td class="price">420 руб.</td>
-                </tr>
+                <thead>
+                    <tr><th scope="col">Название</th><th scope="col">Автор</th><th scope="col">Цена</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td><a href="pride.html">Гордость и предубеждение</a></td><td>Джейн Остин</td><td class="price">590 руб.</td></tr>
+                    <tr class="discount"><td><a href="prince.html">Маленький принц</a> — особая цена</td><td>Антуан де Сент-Экзюпери</td><td class="price">390 руб.</td></tr>
+                    <tr><td><a href="master.html">Мастер и Маргарита</a></td><td>Михаил Булгаков</td><td class="price">690 руб.</td></tr>
+                    <tr><td><a href="alice.html">Алиса в Стране чудес</a></td><td>Льюис Кэрролл</td><td class="price">450 руб.</td></tr>
+                    <tr><td><a href="sherlock.html">Приключения Шерлока Холмса</a></td><td>Артур Конан Дойл</td><td class="price">550 руб.</td></tr>
+                    <tr><td><a href="sea.html">Старик и море</a></td><td>Эрнест Хемингуэй</td><td class="price">420 руб.</td></tr>
+                </tbody>
             </table>
         </div>
-        <p>Зелёным выделена строка с особой ценой. Все цены придуманы для лабораторной работы.</p>
-        <p><a href="catalog.html">Перейти к описаниям книг</a></p>
+        <p>Зелёным выделена строка с особой ценой. Цены условные и приведены для учебного магазина.</p>
+        <p><a href="catalog.html">Перейти в каталог</a></p>
     </main>
-
-    <footer>
-        <p>Между строк, 2026. Учебный сайт.</p>
-        <p>Магазин и цены вымышлены.</p>
-        <a href="index.html">На главную</a>
+    <footer class="site-footer">
+        <p>&copy; 2026 «Между строк». Учебный сайт. Магазин, цены и контакты вымышлены.</p>
+        <p>Почта: <a href="mailto:hello@example.com">hello@example.com</a></p>
+        <p>Обновлено: <time datetime="2026-10-20T22:53+03:00">20.10.2026, 22:53 (МСК)</time></p>
+        <p><a href="index.html">На главную</a> · <a href="index.html#sitemap">Карта сайта</a></p>
     </footer>
 </body>
 </html>

@@ -1,25 +1,23 @@
-/* Общий вид страницы */
 body {
     font-family: Arial, sans-serif;
+    font-size: 16px;
     background-color: #f3f0e8;
     color: #333333;
     margin: 0;
     line-height: 1.5;
 }
 
-/* Шапка сайта */
-header {
+.site-header {
     background-color: #45634b;
     color: white;
     text-align: center;
     padding: 20px;
 }
 
-header h1 {
+.site-header h1 {
     margin: 0;
 }
 
-/* Меню на каждой странице */
 nav {
     background-color: #dce6d9;
     text-align: center;
@@ -32,6 +30,11 @@ nav a {
     margin: 5px 12px;
 }
 
+nav a[aria-current="page"] {
+    font-weight: bold;
+    text-decoration: none;
+}
+
 a {
     color: #34583a;
 }
@@ -40,7 +43,11 @@ a:hover {
     color: #995021;
 }
 
-/* Основное содержимое */
+a:focus-visible {
+    outline: 2px solid #995021;
+    outline-offset: 3px;
+}
+
 main {
     max-width: 900px;
     margin: 20px auto;
@@ -52,19 +59,51 @@ h2, h3 {
     color: #34583a;
 }
 
+section {
+    margin-bottom: 24px;
+}
+
 img {
     max-width: 100%;
     height: auto;
 }
 
-/* Книги идут друг под другом */
 .book {
     border: 1px solid #cccccc;
     padding: 15px;
     margin-bottom: 20px;
 }
 
-/* Таблица с ценами */
+figure {
+    margin: 20px 0;
+}
+
+figcaption {
+    font-size: 14px;
+    color: #555555;
+}
+
+dt {
+    font-weight: bold;
+}
+
+dd {
+    margin: 0 0 10px;
+}
+
+.button {
+    display: inline-block;
+    background-color: #45634b;
+    color: white;
+    padding: 10px 16px;
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: #334b38;
+    color: white;
+}
+
 .table-box {
     overflow-x: auto;
 }
@@ -72,6 +111,11 @@ img {
 table {
     width: 100%;
     border-collapse: collapse;
+}
+
+caption {
+    font-weight: bold;
+    margin-bottom: 10px;
 }
 
 th, td {
@@ -85,6 +129,10 @@ th {
     color: white;
 }
 
+tbody tr {
+    background-color: #faf8f2;
+}
+
 .discount {
     background-color: #e1f1d9;
 }
@@ -94,13 +142,17 @@ th {
     font-weight: bold;
 }
 
-/* Карта и подвал */
+td.price {
+    white-space: nowrap;
+}
+
 iframe {
     max-width: 100%;
     border: 1px solid #cccccc;
+    box-sizing: border-box;
 }
 
-footer {
+.site-footer {
     background-color: #dce6d9;
     text-align: center;
     padding: 15px;

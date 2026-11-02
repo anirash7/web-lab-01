@@ -7,44 +7,48 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>📚 Между строк</h1>
+    <header class="site-header">
+        <a href="index.html"><img src="images/logo.png" alt="Логотип магазина: раскрытая книга" width="64" height="64"></a>
+        <h1>Между строк</h1>
         <p>Книжный магазин</p>
     </header>
-
-    <nav>
-        <a href="index.html">Главная</a>
+    <nav aria-label="Основное меню">
+        <a href="index.html" aria-current="page">Главная</a>
         <a href="catalog.html">Каталог</a>
-        <a href="price.html">Цены</a>
+        <a href="price.html">Прайс-лист</a>
         <a href="about.html">О магазине</a>
         <a href="contacts.html">Контакты</a>
     </nav>
-
     <main>
-        <h2>Добро пожаловать в наш книжный магазин!</h2>
-        <p>Найдите книгу для себя или в подарок. У нас есть романы, повести, сказки и детективы.</p>
-        <img src="images/prince.jpg" alt="Обложка книги Маленький принц" width="180">
-        <h3>Что мы предлагаем</h3>
-        <ul>
-            <li>Классическую литературу.</li>
-            <li>Книги для детей и взрослых.</li>
-            <li>Небольшие истории для чтения вечером.</li>
-        </ul>
-        <p><a href="catalog.html">Посмотреть каталог книг</a></p>
-        <h3>Карта сайта</h3>
-        <ul>
-            <li><a href="index.html">Главная</a> — знакомство с магазином.</li>
-            <li><a href="catalog.html">Каталог</a> — книги и описания.</li>
-            <li><a href="price.html">Цены</a> — таблица стоимости книг.</li>
-            <li><a href="about.html">О магазине</a> — информация о нас.</li>
-            <li><a href="contacts.html">Контакты</a> — адрес и карта.</li>
-        </ul>
+        <section>
+            <h2>Найдите свою следующую книгу</h2>
+            <p>Откройте знакомую историю заново или выберите подарок близкому человеку. В «Между строк» собраны книги для спокойного вечера, семейного чтения и знакомства с классикой.</p>
+            <img src="images/prince.jpg" alt="Обложка книги «Маленький принц»" width="180">
+            <p><a href="prince.html">Маленький принц</a> — история о дружбе и заботе. <strong>390 рублей.</strong></p>
+            <h3>Что можно найти у нас</h3>
+            <ul>
+                <li>Романы Джейн Остин и Михаила Булгакова.</li>
+                <li>Сказки для совместного чтения с детьми.</li>
+                <li>Детективные рассказы и небольшие повести.</li>
+            </ul>
+            <p><a href="catalog.html">Перейти в каталог книг</a></p>
+        </section>
+        <section id="sitemap">
+            <h2>Карта сайта</h2>
+            <ul>
+                <li><a href="index.html">Главная</a> — знакомство с магазином.</li>
+                <li><a href="catalog.html">Каталог</a> — список книг и ссылки на подробные описания.</li>
+                <li><a href="price.html">Прайс-лист</a> — стоимость всех книг.</li>
+                <li><a href="about.html">О магазине</a> — история, цель и преимущества.</li>
+                <li><a href="contacts.html">Контакты</a> — почта, часы работы и карта.</li>
+            </ul>
+        </section>
     </main>
-
-    <footer>
-        <p>Между строк, 2026. Учебный сайт.</p>
-        <p>Магазин и цены вымышлены.</p>
-        <a href="index.html">На главную</a>
+    <footer class="site-footer">
+        <p>&copy; 2026 «Между строк». Учебный сайт. Магазин, цены и контакты вымышлены.</p>
+        <p>Почта: <a href="mailto:hello@example.com">hello@example.com</a></p>
+        <p>Обновлено: <time datetime="2026-10-20T22:53+03:00">20.10.2026, 22:53 (МСК)</time></p>
+        <p><a href="index.html">На главную</a> · <a href="index.html#sitemap">Карта сайта</a></p>
     </footer>
 </body>
 </html>
